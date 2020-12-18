@@ -26,7 +26,7 @@ Include link to your google sheet here. Here is the sample [Joe had used in clas
 Search and compare at least 3 profile web sites. Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site.
 Link To Site | One Thing I'd Like To Incorporate |
 | ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)%7C landing page animation
+| [denisechandler.com](http://www.denisechandler.com/) | %7C landing page animation |
 |[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
 | [mattfarley.ca](http://mattfarley.ca/) | layout of the projects
 
