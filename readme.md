@@ -45,12 +45,13 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 
 ## Wireframes
 
-- [Mobile](https://res.cloudinary.com/kndshein/image/upload/v1608529418/Project%20One/Wireframe_Mobile_hc0x6n.png)
+- [Mobile](https://res.cloudinary.com/kndshein/image/upload/v1608569565/Project%20One/Wireframe__Mobile_dm7trv.png)
+- [Tablet](https://res.cloudinary.com/kndshein/image/upload/v1608569565/Project%20One/Wireframe__Tablet_voopya.png)
 - [Desktop](https://res.cloudinary.com/kndshein/image/upload/v1608529417/Project%20One/Wireframe_Desktop_nty6eu.png)
 
 ## Time/Priority Matrix
 
-[Link](https://res.cloudinary.com/kndshein/image/upload/v1608530762/Project%20One/Time_Priority_Matrix_etdndl.png)
+[Link](https://res.cloudinary.com/kndshein/image/upload/v1608569565/Project%20One/Time_Priority_Matrix_v3g2ge.png)
 
 ### MVP/PostMVP
 
@@ -79,9 +80,9 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | Regular Nav      |    H     |      1 hr      |     hr      |
 | Create Pages     |    H     |     2 hrs      |     hr      |
 | Adding Form      |    H     |     2 hrs      |     hr      |
-| Gallery Grids    |    H     |     3 hrs      |     hr      |
+| Gallery Grids    |    M     |     3 hrs      |     hr      |
 | Working with API |    H     |     4 hrs      |     hr      |
-| Responsive       |    H     |     4 hrs      |     hr      |
+| Responsive       |    H     |     5 hrs      |     hr      |
 | Total            |          |     19 hrs     |     hrs     |
 
 #### PostMVP
@@ -90,11 +91,10 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | -------------------------- | :------: | :------------: | :---------: |
 | Nav Menu Hover             |    H     |     2 hrs      |     hr      |
 | Footer                     |    M     |      1 hr      |     hr      |
-| Scroll Wheel for "I Write" |    M     |     4 hrs      |     hr      |
+| Active Nav                 |    M     |     2 hrs      |     hr      |
+| Social Media Icons         |    M     |      2 hr      |     hr      |
+| Scroll Wheel for "I Write" |    L     |     4 hrs      |     hr      |
 | Gallery Hover Animation    |    L     |     2 hrs      |     hr      |
-| Nav Menu Dot               |    L     |     2 hrs      |     hr      |
-| Active Nav                 |    L     |     2 hrs      |     hr      |
-| Social Media Icons         |    L     |      2 hr      |     hr      |
 | Total                      |          |     15 hrs     |     hrs     |
 
 ## Additional Libraries
