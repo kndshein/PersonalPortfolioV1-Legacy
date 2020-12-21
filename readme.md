@@ -46,7 +46,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 ## Wireframes
 
 - [Mobile](https://res.cloudinary.com/kndshein/image/upload/v1608569565/Project%20One/Wireframe__Mobile_dm7trv.png)
-- [Tablet](https://res.cloudinary.com/kndshein/image/upload/v1608569565/Project%20One/Wireframe__Tablet_voopya.png)
+- [Tablet](https://res.cloudinary.com/kndshein/image/upload/v1608575846/Project%20One/Wireframe__Tablet_n0cryr.png)
 - [Desktop](https://res.cloudinary.com/kndshein/image/upload/v1608529417/Project%20One/Wireframe_Desktop_nty6eu.png)
 
 ## Time/Priority Matrix
@@ -57,7 +57,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 
 #### MVP
 
-- Pull data using google json API
+- Pull data using google API
 - CSS grid for galleries
 - Flexbox for Navigation bar
 - Have a form in About Me page
