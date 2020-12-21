@@ -1,100 +1,101 @@
-# Project Overview
+# Project One Overview
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-| Day | Deliverable | Status
-|---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+Scheduling time with the squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-## Project Description
+| Day         | Deliverable                           | Status     |
+| ----------- | ------------------------------------- | ---------- |
+| 12/20 Sun   | Wireframe + Mock Ups + Timeline       | Complete   |
+| 12/21 Mon   | Project Approvals                     | Incomplete |
+| 12/22 Tues  | HTML + CSS                            | Incomplete |
+| 12/23 Wed   | CSS + MVP                             | Incomplete |
+| 12/24 Thurs | MVP                                   | Incomplete |
+| 12/25 Fri   | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 12/26 Sat   | MVP                                   | Incomplete |
+| 12/27 Sun   | Post MVP                              | Incomplete |
+| 12/28 Mon   | Bug Fixes + Final Touches + Recording | Incomplete |
+| 12/29 Tues  | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 12/30 Wed   | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 12/31 Thurs | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 1/1 Fri     | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 1/2 Sat     | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 1/3 Sun     | <center>--- _Back Up_ ---</center>    | Incomplete |
+| 1/4 Mon     | Present                               | Incomplete |
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+## Project Purpose
+
+To make a user-friendly yet unique portfolio website with the limited knowledge I have acquired over the past couple of weeks.
 
 ## Google Sheet
 
-Include link to your google sheet here. Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0)
+[Google Sheet Link](https://docs.google.com/spreadsheets/d/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/edit#gid=0)
+
+[Google Sheet Json Link](https://spreadsheets.google.com/feeds/list/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/1/public/full?alt=json)
 
 ## Portfolio I want to Emulate
 
-Search and compare at least 3 profile web sites. Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site.
-Link To Site | One Thing I'd Like To Incorporate |
-| ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/) | %7C landing page animation |
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) | layout of the projects
+| Link To Site                                          | One Thing I'd Like To Incorporate       |
+| ----------------------------------------------------- | --------------------------------------- |
+| [knds.art](https://knds.art/fotos)                    | Layout                                  |
+| [danmachado.com](https://www.danmachado.com/)         | Intro page for phone + tablet layout    |
+| [moritz-peterson.de](https://www.moritz-petersen.de/) | The way the project cards move on hover |
 
 ---
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.
-
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-  Wireframing Resources:
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Mobile](https://res.cloudinary.com/kndshein/image/upload/v1608529418/Project%20One/Wireframe_Mobile_hc0x6n.png)
+- [Desktop](https://res.cloudinary.com/kndshein/image/upload/v1608529417/Project%20One/Wireframe_Desktop_nty6eu.png)
 
 ## Time/Priority Matrix
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix. This involves drawing a a square. In the middle of the square, on the x axis draw a line. The most left part of the line should start with 0hrs and the end of the line should include 2hrs. This line will be used to estimate how much time any one feature will take to complete.
-Now draw a vertical line on the y axis. The top of this line should have `High` and the bottom `Low`. This line will be used to assign a priority to to each feature you wish to include in the project.  
-Now create a separate list starting with A and assign it one of the features. Continue to assign each feature a letter. Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter.
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo.
+[Link](https://res.cloudinary.com/kndshein/image/upload/v1608530762/Project%20One/Time_Priority_Matrix_etdndl.png)
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
-#### MVP (examples)
-
-- Pull data using google json api
-- Render data on page
-- Allow user to choose favorites
-- Save their choices in firebase
-
-#### PostMVP
-
-- Anything else that is not MVP
-
-## Functional Components
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions. Try and capture what logic would need to be defined if the game was broken down into the following categories.
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+### MVP/PostMVP
 
 #### MVP
 
-| Component               | Priority | Estimated Time | Actual Time |
-| ----------------------- | :------: | :------------: | :---------: |
-| Hamburger               |    H     |      1hr       |     hr      |
-| Project Previews        |    H     |      3hr       |     hr      |
-| Regular Nav             |    H     |      1hr       |     hr      |
-| Adding Form             |    H     |     1.5hr      |     hr      |
-| Other sections and flex |    M     |      3hr       |     hr      |
-| Working with API        |    H     |      3hrs      |     hr      |
-| Responsive              |    H     |      3hr       |     hr      |
-| Social Media Icons      |    L     |      1hr       |     hr      |
-| Total                   |    H     |    15.5hrs     |     hrs     |
+- Pull data using google json API
+- CSS grid for galleries
+- Flexbox for Navigation bar
+- Have a form in About Me page
 
 #### PostMVP
 
-| Component             | Priority | Estimated Time | Actual Time |
-| --------------------- | :------: | :------------: | :---------: |
-| Project Hover         |    L     |      3hr       |     -hr     |
-| Banner letters wiggle |    L     |      1hr       |     hr      |
-| Interactive Banner    |    M     |      4hr       |     hr      |
-| Materialize           |    H     |      4hr       |     -hr     |
-| Bootstrap             |    H     |      4hr       |     hr      |
-| Make own icon         |    L     |      4hr       |     hr      |
-| Total                 |    H     |     20hrs      |     hrs     |
+- Full page navigation for mobile
+- Carousel for Design on mobile
+- On hover animation for images
+- On hover animation for navigation links on Desktop
+
+## Functional Components
+
+#### MVP
+
+| Component        | Priority | Estimated Time | Actual Time |
+| ---------------- | :------: | :------------: | :---------: |
+| Base HTML        |    H     |      1 hr      |     hr      |
+| Nav Menu Mobile  |    H     |      2 hr      |     hr      |
+| Regular Nav      |    H     |      1 hr      |     hr      |
+| Create Pages     |    H     |     2 hrs      |     hr      |
+| Adding Form      |    H     |     2 hrs      |     hr      |
+| Gallery Grids    |    H     |     3 hrs      |     hr      |
+| Working with API |    H     |     4 hrs      |     hr      |
+| Responsive       |    H     |     4 hrs      |     hr      |
+| Total            |          |     19 hrs     |     hrs     |
+
+#### PostMVP
+
+| Component                  | Priority | Estimated Time | Actual Time |
+| -------------------------- | :------: | :------------: | :---------: |
+| Nav Menu Hover             |    H     |     2 hrs      |     hr      |
+| Footer                     |    M     |      1 hr      |     hr      |
+| Scroll Wheel for "I Write" |    M     |     4 hrs      |     hr      |
+| Gallery Hover Animation    |    L     |     2 hrs      |     hr      |
+| Nav Menu Dot               |    L     |     2 hrs      |     hr      |
+| Active Nav                 |    L     |     2 hrs      |     hr      |
+| Social Media Icons         |    L     |      2 hr      |     hr      |
+| Total                      |          |     15 hrs     |     hrs     |
 
 ## Additional Libraries
 
