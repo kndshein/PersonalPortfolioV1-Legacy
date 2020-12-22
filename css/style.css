@@ -1,93 +1,7 @@
-/* Raw CSS for mobile */
-
-body {
-  margin: auto;
-  padding: 20px;
-}
-
-/* Header */
-
-/* Overlay Mobile Navigation */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: var(--main);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  font-family: proxima-nova, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 10vw;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  padding: 0;
-  font-size: 0;
-}
-
-.fas.fa-times-circle {
-  font-size: 42px;
-}
-
-/* Overlay Mobile Navigation End */
-
-#logo,
-#logoAlt {
-  font-family: bebas-neue, sans-serif;
-  font-size: 48px;
-}
-
-#logo {
-  display: none;
-}
-
-.topNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.topNavLinks {
-  display: none;
-}
-
-.fas.fa-plus-circle {
-  font-size: 42px;
-}
-
-/* Body Text */
+/* HOME */
 
 .landingText > h1 {
-  font-size: 48px;
+  font-size: 3.5rem;
 }
 
 .landingText > h1 > span {
@@ -99,33 +13,30 @@ body {
   font-style: italic;
 }
 
-/* Raw CSS for desktop */
+/* ABOUT ME */
 
-@media only screen and (min-width: 1024px) {
-  body {
-    max-width: 1500px;
-  }
+#profilePic {
+  border-radius: 50%;
+  width: 15vw;
+  min-width: 200px;
+  margin: 4vw auto 3vw auto;
+  display: block;
+}
 
-  #logo {
-    display: flex;
-  }
+.aboutText {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-  #logoAlt {
-    display: none;
-  }
+.aboutText h1 {
+  font-size: 3.5rem;
+}
 
-  .topNavLinks {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
-  }
+.aboutText span {
+  font-size: 3rem;
+}
 
-  .topNavLinks > li {
-    margin-left: 25px;
-    font-size: 24px;
-  }
-
-  .fas.fa-plus-circle {
-    display: none;
-  }
+.aboutText p {
+  margin: 2rem 0 2rem 0;
+  font-size: 2rem;
 }
