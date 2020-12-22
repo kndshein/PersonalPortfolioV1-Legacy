@@ -85,7 +85,7 @@ a {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 10vw;
+  font-size: 3rem;
   color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -98,14 +98,14 @@ a {
 
 .overlay .closebtn {
   position: absolute;
-  top: 25px;
+  top: 22px;
   right: 20px;
   padding: 0;
   font-size: 0;
 }
 
 .fas.fa-times-circle {
-  font-size: 42px;
+  font-size: 38px;
 }
 
 /* Overlay Mobile Navigation End */
@@ -113,7 +113,7 @@ a {
 #logo a,
 #logoAlt a {
   font-family: bebas-neue, sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 #logo {
@@ -124,6 +124,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .topNavLinks {
@@ -131,7 +132,7 @@ a {
 }
 
 .fas.fa-plus-circle {
-  font-size: 42px;
+  font-size: 38px;
 }
 
 /* Raw CSS for mobile end*/
@@ -140,7 +141,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   body {
-    max-width: 1500px;
+    max-width: 1200px;
   }
 
   #logo {
@@ -159,7 +160,8 @@ a {
 
   .topNavLinks li a {
     margin-left: 25px;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
   }
 
   .fas.fa-plus-circle {

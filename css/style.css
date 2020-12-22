@@ -1,16 +1,36 @@
 /* HOME */
 
-.landingText > h1 {
-  font-size: 3.5rem;
+.landingText h1 {
+  font-size: min(15vw, 100px);
+  line-height: min(15vw, 100px);
 }
 
-.landingText > h1 > span {
+.landingText h1 span {
   font-size: inherit;
   color: var(--accent);
 }
 
-.landingText > h1 > span:nth-of-type(2) {
+.landingText h1 span:nth-of-type(2) {
   font-style: italic;
+}
+
+.landingText p {
+  margin-top: min(15vw, 30px);
+  font-size: 2rem;
+}
+
+#moreAboutMe {
+  margin-top: min(10vw, 15px);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1024px) {
+  .landingText {
+    position: absolute;
+    top: 30%;
+    max-width: 1000px;
+  }
 }
 
 /* ABOUT ME */
@@ -19,16 +39,17 @@
   border-radius: 50%;
   width: 15vw;
   min-width: 200px;
-  margin: 4vw auto 3vw auto;
+  margin: 3vw auto 3vw auto;
   display: block;
 }
 
 .aboutText {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .aboutText h1 {
+  margin-top: 25px;
   font-size: 3.5rem;
 }
 
