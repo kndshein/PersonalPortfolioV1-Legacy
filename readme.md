@@ -114,3 +114,7 @@ function reverse(string) {
 ## Issues and Resolutions
 
 Use this section to list of all major issues encountered and their resolution.
+
+## Citations
+
+[Overlay Mobile Navigation](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
