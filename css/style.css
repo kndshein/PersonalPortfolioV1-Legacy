@@ -27,12 +27,15 @@ body {
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 10vw;
   color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -45,9 +48,14 @@ body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 25px;
+  right: 20px;
+  padding: 0;
+  font-size: 0;
+}
+
+.fas.fa-times-circle {
+  font-size: 42px;
 }
 
 /* Overlay Mobile Navigation End */
@@ -73,7 +81,7 @@ body {
 }
 
 .fas.fa-plus-circle {
-  font-size: 40px;
+  font-size: 42px;
 }
 
 /* Body Text */
