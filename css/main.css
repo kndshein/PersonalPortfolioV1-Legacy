@@ -8,7 +8,7 @@
   /* MAIN COLORS */
   --main: #3f3f3f;
   --secondary: white;
-  --accent: #999999;
+  --accent: #dadada;
   --code: red;
 
   /* FONTS */
@@ -58,13 +58,13 @@ a {
 
 /* Header */
 
-/* Overlay Mobile Navigation */
+/* Overlay Mobile Navigation Start*/
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0%;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 11; /* Sit on top */
   left: 0;
   top: 0;
   background-color: var(--main);
@@ -130,8 +130,9 @@ a {
 }
 
 .topNavContainer {
+  z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: rgba(63, 63, 63, 0.2) 1px solid;
+  border-bottom: rgba(63, 63, 63, 0.1) 1px solid;
   width: 100%;
   position: fixed;
   top: 0;

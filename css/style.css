@@ -1,4 +1,6 @@
-/* HOME */
+/***********
+*   HOME   *
+***********/
 
 .landingText {
   margin-top: 75px;
@@ -18,12 +20,12 @@
 }
 
 .landingText p {
-  margin-top: min(10vw, 50px);
   font-size: 2rem;
+  margin-top: min(10vw, 50px);
+  margin-bottom: min(6vw, 30px);
 }
 
 #moreAboutMe {
-  margin-top: min(10vw, 30px);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -38,14 +40,15 @@
   }
 }
 
-/* CODE */
+/***********
+*   CODE   *
+***********/
 
 .codeGallery {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: max(5vw, 75px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 75px;
+  gap: min(10vw, 50px);
 }
 
 .card {
@@ -53,8 +56,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: 300px;
-  width: max(30%, 300px);
-  margin: 10px;
   position: relative;
 }
 
@@ -87,13 +88,11 @@
   display: block;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-/* Add some padding inside the card container */
 .cardContainer {
   padding: 10px 15px;
   max-width: 100%;
@@ -121,7 +120,9 @@
   min-height: 100%;
 }
 
-/* ABOUT ME */
+/************
+*   ABOUT   *
+************/
 
 #profilePic {
   border-radius: 50%;

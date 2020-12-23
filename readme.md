@@ -7,8 +7,8 @@ Scheduling time with the squad to seek approval for each deliverable by the end 
 | Day         | Deliverable                           | Status     |
 | ----------- | ------------------------------------- | ---------- |
 | 12/20 Sun   | Wireframe + Mock Ups + Timeline       | Complete   |
-| 12/21 Mon   | Project Approvals                     | Incomplete |
-| 12/22 Tues  | HTML + CSS                            | Incomplete |
+| 12/21 Mon   | Project Approvals                     | Complete   |
+| 12/22 Tues  | HTML + CSS                            | Complete   |
 | 12/23 Wed   | CSS + MVP                             | Incomplete |
 | 12/24 Thurs | MVP                                   | Incomplete |
 | 12/25 Fri   | <center>--- _Back Up_ ---</center>    | Incomplete |
@@ -75,10 +75,10 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 
 | Component        | Priority | Estimated Time | Actual Time |
 | ---------------- | :------: | :------------: | :---------: |
-| Base HTML        |    H     |      1 hr      |     hr      |
-| Nav Menu Mobile  |    H     |      2 hr      |     hr      |
-| Regular Nav      |    H     |      1 hr      |     hr      |
-| Create Pages     |    H     |     2 hrs      |     hr      |
+| Base HTML        |    H     |      1 hr      |    1 hr     |
+| Nav Menu Mobile  |    H     |      2 hr      |    3 hrs    |
+| Regular Nav      |    H     |      1 hr      |    3 hrs    |
+| Create Pages     |    H     |     2 hrs      |   0.5 hr    |
 | Adding Form      |    H     |     2 hrs      |     hr      |
 | Gallery Grids    |    M     |     3 hrs      |     hr      |
 | Working with API |    H     |     4 hrs      |     hr      |
@@ -94,7 +94,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | Active Nav                 |    M     |     2 hrs      |     hr      |
 | Social Media Icons         |    M     |      2 hr      |     hr      |
 | Scroll Wheel for "I Write" |    L     |     4 hrs      |     hr      |
-| Gallery Hover Animation    |    L     |     2 hrs      |     hr      |
+| Gallery Hover Animation    |    L     |     2 hrs      |   1.5 hrs   |
 | Total                      |          |     15 hrs     |     hrs     |
 
 ## Additional Libraries
