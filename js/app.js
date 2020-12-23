@@ -31,9 +31,12 @@ $.ajax(
   // Use jQuery to render projects to page
   ////////////////////////////////
   for (i = 0; i < projects.length; i++) {
-    const $div = $("<div>");
-    $div.addClass("card");
-    $div.html(`
+    const $a = $("<a>");
+    $a.addClass("cardLink");
+    $a.attr("target", "_blank");
+    $a.attr("href", `${projects[i].github}`);
+    $a.html(`
+    <div class="card">
     <div class="cardContainer">
       <h4>${projects[i].name}</h4>
     </div>
@@ -48,8 +51,9 @@ $.ajax(
         ${projects[i].description}
       </div>
     </div>
+    </div>
     `);
-    $(".codeGallery").append($div);
+    $(".codeGallery").append($a);
   }
 });
 

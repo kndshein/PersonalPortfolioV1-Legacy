@@ -80,7 +80,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | Regular Nav      |    H     |      1 hr      |    3 hrs    |
 | Create Pages     |    H     |     2 hrs      |   0.5 hr    |
 | Adding Form      |    H     |     2 hrs      |     hr      |
-| Gallery Grids    |    M     |     3 hrs      |     hr      |
+| Gallery Grids    |    M     |     3 hrs      |    3 hr     |
 | Working with API |    H     |     4 hrs      |     hr      |
 | Responsive       |    H     |     5 hrs      |     hr      |
 | Total            |          |     19 hrs     |     hrs     |
@@ -94,7 +94,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | Active Nav                 |    M     |     2 hrs      |     hr      |
 | Social Media Icons         |    M     |      2 hr      |     hr      |
 | Scroll Wheel for "I Write" |    L     |     4 hrs      |     hr      |
-| Gallery Hover Animation    |    L     |     2 hrs      |   1.5 hrs   |
+| Gallery Hover Animation    |    L     |     2 hrs      |    3 hrs    |
 | Total                      |          |     15 hrs     |     hrs     |
 
 ## Additional Libraries
