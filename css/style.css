@@ -26,7 +26,6 @@
 }
 
 #moreAboutMe {
-  color: var(--main);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-size: 1.2rem;
@@ -159,6 +158,18 @@
 .aboutForm {
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
+}
+
+.aboutForm h4 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.formInside {
+  display: flex;
+  flex-direction: column;
 }
 
 form .formInside label {
@@ -195,10 +206,31 @@ input:focus {
   height: 150px;
 }
 
-.aboutForm h4 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 35px;
+.formThankWhenClicked {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 82.5%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: var(--liteAccent);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formThankText {
+  display: none;
+}
+
+.formThankTextWhenClicked {
+  display: block;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 button {
@@ -208,6 +240,9 @@ button {
   border: none;
   border-radius: 3px;
   background-color: var(--liteAccent);
+  padding: 10px 10px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 button:hover {
@@ -238,11 +273,6 @@ button:focus {
     margin-bottom: 25px;
   }
 
-  .formInside {
-    display: flex;
-    flex-direction: column;
-  }
-
   .formInside:nth-of-type(2) {
     grid-area: 1 / 2 / 2 / 4;
   }
@@ -253,7 +283,5 @@ button:focus {
 
   button {
     grid-area: 3 / 1 / 4 / 4;
-    padding: 10px 0px;
-    margin-top: 20px;
   }
 }

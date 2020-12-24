@@ -8,7 +8,7 @@
   /* MAIN COLORS */
   --main: #555555;
   --secondary: white;
-  --liteAccent: #cccccc;
+  --liteAccent: #eeeeee;
   --accent: #aaaaaa;
   --code: red;
 
@@ -49,6 +49,14 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+a:focus {
+  color: var(--main);
 }
 
 /* *******************************************
@@ -133,6 +141,7 @@ a {
 .topNavContainer {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   border-bottom: rgba(63, 63, 63, 0.2) 1px solid;
   width: 100%;
   position: fixed;

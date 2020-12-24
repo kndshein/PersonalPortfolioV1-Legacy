@@ -7,13 +7,13 @@ $.ajax(
   "https://spreadsheets.google.com/feeds/list/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/1/public/full?alt=json"
 ).then((data) => {
   // Checking my data
-  console.log(data);
+  // console.log(data);
 
   // Put our projects in a variable
   const rawProjects = data.feed.entry;
 
   // Log our projects
-  console.log(rawProjects);
+  // console.log(rawProjects);
 
   // Prettify our projects array
   const projects = rawProjects.map((project) => {
@@ -27,9 +27,7 @@ $.ajax(
   });
   console.log(projects);
 
-  ////////////////////////////////
   // Use jQuery to render projects to page
-  ////////////////////////////////
   for (i = 0; i < projects.length; i++) {
     const $a = $("<a>");
     $a.addClass("cardLink");
@@ -57,24 +55,9 @@ $.ajax(
   }
 });
 
-////////////////////////////////
-// Pull data from blog from Headless CMS
-////////////////////////////////
-
-////////////////////////////
-// Overlay Mobile Navigation
-////////////////////////////
-
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
+////////////////////////
+// Form to Google Sheets
+////////////////////////
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyhIWBI-nHw32ffnSa3C5IUzJbQ8pN7zalMLT7tGcUx-h5kBSZL/exec";
 const form = document.forms["submit-to-google-sheet"];
@@ -85,3 +68,36 @@ form.addEventListener("submit", (e) => {
     .then((response) => console.log("Success!", response))
     .catch((error) => console.error("Error!", error.message));
 });
+
+///////////////////////
+// Form Style on Submit
+///////////////////////
+$("#aboutFormButton").click(function () {
+  if (
+    $("#formName").val() &&
+    $("#formEmail").val() &&
+    $("#formMessage").val()
+  ) {
+    $("#formThank").removeClass("formThank");
+    $("#formThank").addClass("formThankWhenClicked");
+    $("#formThankText").removeClass("formThankText");
+    $("#formThankText").addClass("formThankTextWhenClicked");
+  }
+});
+
+////////////////////////////////
+// Pull data from blog from Headless CMS
+////////////////////////////////
+
+////////////////////////////
+// Overlay Mobile Navigation
+////////////////////////////
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}

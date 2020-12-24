@@ -145,10 +145,14 @@
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button id="aboutFormButton" type="submit" onclick="this.blur();">
+          Submit
+        </button>
       </form>
-      <div class="formThank">
-        <div class="formThankText">Thanks for filling the form.</div>
+      <div id="formThank" class="formThank">
+        <div id="formThankText" class="formThankText">
+          Thanks for filling the form.
+        </div>
       </div>
     </div>
   </body>
