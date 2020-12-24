@@ -113,7 +113,10 @@ function reverse(string) {
 
 ## Issues and Resolutions
 
-Use this section to list of all major issues encountered and their resolution.
+```
+app.js:78 Uncaught ReferenceError: form is not defined
+    at app.js:78
+```
 
 ## Citations
 
