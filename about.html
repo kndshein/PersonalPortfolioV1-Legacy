@@ -113,42 +113,43 @@
         actually playing them.
       </p>
     </div>
-    <!-- <div class="aboutForm">
-      <h4>Start a convo!</h4>
-      <form>
-        <label for="name"></label>
-        <input
-          type="text"
-          id="formName"
-          name="name"
-          placeholder="Your name..."
-          required
-        /><br />
-        <label for="email"></label>
-        <input
-          type="email"
-          id="formEmail"
-          name="email"
-          placeholder="Enter your email..."
-          required
-        /><br />
-        <label for="message"></label>
-        <input
-          type="text"
-          id="formMessage"
-          name="message"
-          placeholder="Please don't rickroll me..."
-          required
-        /><br />
-        <input type="submit" value="submit" />
+    <div class="aboutForm">
+      <h4>The world's burning, let's connect!</h4>
+      <form name="submit-to-google-sheet">
+        <div class="formInside">
+          <label for="name">Name</label>
+          <input
+            id="formName"
+            name="Name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="formInside">
+          <label for="formEmail">Email</label>
+          <input
+            id="formEmail"
+            name="Email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="formInside">
+          <label for="formMessage">Message</label>
+          <textarea
+            id="formMessage"
+            name="Message"
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
       </form>
-    </div> -->
-
-    <form name="submit-to-google-sheet">
-      <input name="Name" type="text" placeholder="Name" />
-      <input name="Email" type="email" placeholder="Email" required />
-      <input name="Message" type="text" placeholder="Message" />
-      <button type="submit">Send</button>
-    </form>
+      <div class="formThank">
+        <div class="formThankText">Thanks for filling the form.</div>
+      </div>
+    </div>
   </body>
 </html>

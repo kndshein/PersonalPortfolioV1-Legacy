@@ -6,9 +6,10 @@
 /* VARIABLES */
 :root {
   /* MAIN COLORS */
-  --main: #3f3f3f;
+  --main: #555555;
   --secondary: white;
-  --accent: #dadada;
+  --liteAccent: #cccccc;
+  --accent: #aaaaaa;
   --code: red;
 
   /* FONTS */
@@ -33,7 +34,7 @@ h5,
 h6 {
   font-family: var(--title);
   font-weight: 600;
-  line-height: 3.5rem;
+  line-height: 3rem;
 }
 
 body {
