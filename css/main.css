@@ -167,6 +167,18 @@ a:focus {
   font-size: 38px;
 }
 
+.footer {
+  margin-top: 75px;
+  width: 100%;
+}
+
+.footerText {
+  color: var(--accent);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
 /* Raw CSS for mobile end*/
 
 /* Raw CSS for desktop */

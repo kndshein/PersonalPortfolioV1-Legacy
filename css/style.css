@@ -3,8 +3,9 @@
 ***********/
 
 .landingText {
-  margin-top: 75px;
+  margin-top: max(8vw, 75px);
 }
+
 .landingText h1 {
   font-size: min(15vw, 100px);
   line-height: min(15vw, 100px);
@@ -22,7 +23,7 @@
 .landingText p {
   font-size: 2rem;
   margin-top: min(10vw, 50px);
-  margin-bottom: min(6vw, 30px);
+  margin-bottom: min(8vw, 50px);
 }
 
 #moreAboutMe {
@@ -32,12 +33,15 @@
   font-weight: 500;
 }
 
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-grow: 1;
+} */
+
 @media only screen and (min-width: 1024px) {
   .landingText {
-    position: absolute;
-    top: 15%;
-    left: auto;
-    right: auto;
     max-width: 1000px;
   }
 }
@@ -139,7 +143,7 @@
   margin: 0 auto;
 }
 
-.aboutText h1 {
+.aboutText h2 {
   text-align: left;
   margin-top: 25px;
   font-size: 4rem;
@@ -151,7 +155,7 @@
 }
 
 .aboutText p {
-  margin: 2rem 0 2rem 0;
+  margin: 4rem 0 6rem 0;
   font-size: 2rem;
 }
 
@@ -164,7 +168,7 @@
 .aboutForm h4 {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .formInside {
@@ -193,6 +197,7 @@ input,
 #formMessage::placeholder,
 input::placeholder {
   color: var(--accent);
+  font-style: italic;
 }
 
 #formMessage:focus,
@@ -203,7 +208,8 @@ input:focus {
 
 #formMessage {
   resize: vertical;
-  height: 150px;
+  height: 200px;
+  padding: 10px;
 }
 
 .formThankWhenClicked {
@@ -257,7 +263,7 @@ button:focus {
 }
 
 @media only screen and (min-width: 1024px) {
-  .aboutText h1 {
+  .aboutText h2 {
     text-align: center;
   }
 
@@ -267,10 +273,6 @@ button:focus {
     grid-template-rows: repeat(3, auto);
     gap: 10px;
     column-gap: 30px;
-  }
-
-  .aboutForm h4 {
-    margin-bottom: 25px;
   }
 
   .formInside:nth-of-type(2) {
