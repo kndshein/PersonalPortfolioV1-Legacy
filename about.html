@@ -112,47 +112,74 @@
         actually playing them.
       </p>
     </div>
-    <div class="aboutForm">
+    <div class="aboutFormContainer">
       <h4>The world's burning, let's connect!</h4>
-      <form name="submit-to-google-sheet">
-        <div class="formInside">
-          <label for="name">Name</label>
-          <input
-            id="formName"
-            name="Name"
-            type="text"
-            placeholder="Austin Powers"
-            required
-          />
-        </div>
-        <div class="formInside">
-          <label for="formEmail">Email</label>
-          <input
-            id="formEmail"
-            name="Email"
-            type="email"
-            placeholder="manofmystery@shagadelic.spy"
-            required
-          />
-        </div>
-        <div class="formInside">
-          <label for="formMessage">Message</label>
-          <textarea
-            id="formMessage"
-            name="Message"
-            placeholder="What we swingers were going against were uptight squares like you whose bag was money and world domination. We were innocent, man. If we had known the consequences of our sexual liberation, we would've done things much differently but the spirit would remain the same. It's freedom baby."
-            required
-          ></textarea>
-        </div>
-        <button id="aboutFormButton" type="submit" onclick="this.blur();">
-          Submit
-        </button>
-      </form>
-      <div id="formThank" class="formThank">
-        <div id="formThankText" class="formThankText">
-          Thanks for filling the form.
+      <div class="aboutForm">
+        <form name="submit-to-google-sheet">
+          <div class="formInside">
+            <label for="name">Name</label>
+            <input
+              id="formName"
+              name="Name"
+              type="text"
+              placeholder="Austin Powers"
+              required
+            />
+          </div>
+          <div class="formInside">
+            <label for="formEmail">Email</label>
+            <input
+              id="formEmail"
+              name="Email"
+              type="email"
+              placeholder="manofmystery@shagadelic.spy"
+              required
+            />
+          </div>
+          <div class="formInside">
+            <label for="formMessage">Message</label>
+            <textarea
+              id="formMessage"
+              name="Message"
+              placeholder="What we swingers were going against were uptight squares like you whose bag was money and world domination. We were innocent, man. If we had known the consequences of our sexual liberation, we would've done things much differently but the spirit would remain the same. It's freedom baby."
+              required
+            ></textarea>
+          </div>
+          <button id="aboutFormButton" type="submit" onclick="this.blur();">
+            Submit
+          </button>
+        </form>
+        <div id="formThank" class="formThank">
+          <div id="formThankText" class="formThankText">
+            Thanks for reaching out! I'll get back to you in a jiffy.
+          </div>
         </div>
       </div>
+      <!-- Script for form -->
+      <script>
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbyhIWBI-nHw32ffnSa3C5IUzJbQ8pN7zalMLT7tGcUx-h5kBSZL/exec";
+        const form = document.forms["submit-to-google-sheet"];
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => console.log("Success!", response))
+            .catch((error) => console.error("Error!", error.message));
+        });
+        $("#aboutFormButton").click(function () {
+          if (
+            $("#formName").val() &&
+            $("#formEmail").val() &&
+            $("#formMessage").val()
+          ) {
+            $("#formThank").removeClass("formThank");
+            $("#formThank").addClass("formThankWhenClicked");
+            $("#formThankText").removeClass("formThankText");
+            $("#formThankText").addClass("formThankTextWhenClicked");
+          }
+        });
+      </script>
     </div>
     <div class="footer">
       <div class="footerText">

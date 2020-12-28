@@ -77,10 +77,10 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | ---------------- | :------: | :------------: | :---------: |
 | Base HTML        |    H     |      1 hr      |    1 hr     |
 | Nav Menu Mobile  |    H     |      2 hr      |    3 hrs    |
-| Regular Nav      |    H     |      1 hr      |    3 hrs    |
+| Regular Nav      |    H     |      1 hr      |    5 hrs    |
 | Create Pages     |    H     |     2 hrs      |   0.5 hr    |
-| Adding Form      |    H     |     2 hrs      |     hr      |
-| Gallery Grids    |    M     |     3 hrs      |    3 hr     |
+| Adding Form      |    H     |     2 hrs      |    5 hrs    |
+| Gallery Grids    |    M     |     3 hrs      |   10 hrs    |
 | Working with API |    H     |     4 hrs      |     hr      |
 | Responsive       |    H     |     5 hrs      |     hr      |
 | Total            |          |     19 hrs     |     hrs     |
@@ -90,7 +90,7 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 | Component                  | Priority | Estimated Time | Actual Time |
 | -------------------------- | :------: | :------------: | :---------: |
 | Nav Menu Hover             |    H     |     2 hrs      |     hr      |
-| Footer                     |    M     |      1 hr      |     hr      |
+| Footer                     |    M     |      1 hr      |    1 hr     |
 | Active Nav                 |    M     |     2 hrs      |     hr      |
 | Social Media Icons         |    M     |      2 hr      |     hr      |
 | Scroll Wheel for "I Write" |    L     |     4 hrs      |     hr      |
@@ -99,11 +99,11 @@ To make a user-friendly yet unique portfolio website with the limited knowledge 
 
 ## Additional Libraries
 
-Use this section to list all supporting libraries and thier role in the project.
+Use this section to list all supporting libraries and their role in the project.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description
 
 ```
 function reverse(string) {
@@ -118,6 +118,10 @@ app.js:78 Uncaught ReferenceError: form is not defined
     at app.js:78
 ```
 
+I was missing the scriptURL in javascript.
+
 ## Citations
 
 [Overlay Mobile Navigation](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
+
+[Form to Google Sheets with jQuery](https://dev.to/omerlahav/submit-a-form-to-a-google-spreadsheet-1bia)

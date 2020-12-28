@@ -54,36 +54,6 @@ $.ajax(
   }
 });
 
-////////////////////////
-// Form to Google Sheets
-////////////////////////
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyhIWBI-nHw32ffnSa3C5IUzJbQ8pN7zalMLT7tGcUx-h5kBSZL/exec";
-const form = document.forms["submit-to-google-sheet"];
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
-    .catch((error) => console.error("Error!", error.message));
-});
-
-///////////////////////
-// Form Style on Submit
-///////////////////////
-$("#aboutFormButton").click(function () {
-  if (
-    $("#formName").val() &&
-    $("#formEmail").val() &&
-    $("#formMessage").val()
-  ) {
-    $("#formThank").removeClass("formThank");
-    $("#formThank").addClass("formThankWhenClicked");
-    $("#formThankText").removeClass("formThankText");
-    $("#formThankText").addClass("formThankTextWhenClicked");
-  }
-});
-
 ////////////////////////////////
 // Pull data from blog from Headless CMS
 ////////////////////////////////
