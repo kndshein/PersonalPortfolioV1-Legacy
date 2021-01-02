@@ -1,7 +1,7 @@
 console.log("hello world");
 
 ///////////////////////////////////
-// PULL AND RENDER DATA FROM GOOGLE SHEET
+// PULL AND RENDER DATA FROM GOOGLE SHEET (CODE)
 ///////////////////////////////////
 $.ajax(
   "https://spreadsheets.google.com/feeds/list/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/1/public/full?alt=json"

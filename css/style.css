@@ -50,59 +50,61 @@
   gap: min(10vw, 50px);
 }
 
-.card {
+.codeGallery .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  border: rgba(63, 63, 63, 0.2) 1px solid;
+  transition: all 0.2s ease-in-out;
   height: 300px;
   position: relative;
 }
 
-.cardOverlay {
+.codeGallery .cardOverlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 82.5%;
   width: 100%;
-  transition: 0.5s ease;
-  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
   padding: 30px;
 }
 
-.cardOverlayText {
+.codeGallery .cardOverlayText {
   display: none;
   color: white;
   font-size: 1.5rem;
   line-height: 2rem;
+  text-align: center;
 }
-.card:hover .cardOverlay {
-  background-color: rgba(0, 0, 0, 0.8);
+
+.codeGallery .card:hover .cardOverlay {
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card:hover .cardOverlayText {
+.codeGallery .card:hover .cardOverlayText {
   display: block;
 }
 
-.card:hover {
+.codeGallery .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: black;
 }
 
-.cardContainer {
+.codeGallery .cardContainer {
   padding: 10px 15px;
   max-width: 100%;
   height: 17.5%;
 }
 
-.cardContainer h4 {
+.codeGallery .cardContainer h4 {
   font-size: 25px;
   line-height: 30px;
 }
 
-.imgContainer {
+.codeGallery .imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,10 +113,64 @@
   height: 82.5%;
 }
 
-.imgContainer img {
+.codeGallery .imgContainer img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+/************
+*   SHOOT   *
+************/
+
+.shootGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 75px;
+  gap: min(10vw, 50px);
+}
+
+.shootGallery .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shootGallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.shootGallery .cardOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.shootGallery .cardOverlayText {
+  display: none;
+  color: white;
+  text-align: center;
+  font-family: var(--title);
+  font-size: 2.5rem;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.shootGallery .card:hover .cardOverlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shootGallery .card:hover .cardOverlayText {
+  display: block;
 }
 
 /************
@@ -131,6 +187,7 @@
   display: block;
   margin-top: max(5vw, 75px);
   object-fit: cover;
+  border: 1px solid var(--main);
 }
 
 .aboutText {
