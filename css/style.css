@@ -33,13 +33,6 @@
   font-weight: 500;
 }
 
-/* .footer {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-grow: 1;
-} */
-
 @media only screen and (min-width: 1024px) {
   .landingText {
     max-width: 1000px;

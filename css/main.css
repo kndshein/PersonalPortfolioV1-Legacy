@@ -71,35 +71,33 @@ a:focus {
 .overlay {
   height: 100%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 10;
   left: 0;
-  top: 0;
-  background-color: var(--main);
-  overflow-x: hidden; /* Disable horizontal scroll */
+  top: 63px;
+  overflow-x: hidden;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 2s, opacity 0.5s linear;
+  transition: visibility 2s, opacity 1s ease-in-out;
 }
 
 .overlayContent {
   position: relative;
-  top: 15%; /* 15% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 15%;
+  width: 100%;
+  text-align: center;
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .overlay a {
+  position: relative;
   padding: 8px;
   text-decoration: none;
   font-size: 3rem;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  color: var(--main);
+  display: block;
 }
 
 .overlay a:hover,
@@ -107,32 +105,23 @@ a:focus {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
+.overlayBackground {
+  z-index: 6;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: var(--liteAccent);
+  transition: all 750ms ease-in-out;
+  transform: scale(0.1);
   position: absolute;
-  top: 22px;
-  right: 20px;
-  padding: 0;
-  font-size: 0;
-}
-
-.fas.fa-times-circle {
-  font-size: 38px;
 }
 
 /* Overlay Mobile Navigation End */
 
-#logo a,
-#logoAlt a {
-  font-family: bebas-neue, sans-serif;
-  font-size: 3rem;
-}
-
-#logoAlt a {
-  font-size: 3.5rem;
-}
-
+#logo,
 #logoAlt {
-  display: flex;
+  font-family: bebas-neue, sans-serif;
+  font-size: 3.5rem;
 }
 
 #logo {
@@ -140,8 +129,7 @@ a:focus {
 }
 
 .topNavContainer {
-  z-index: 10;
-  border-bottom: 0;
+  z-index: 5;
   width: 100%;
   position: fixed;
   top: 0;
@@ -152,18 +140,28 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  line-height: 0;
 }
 
 .topNavLinks {
   display: none;
 }
 
-.fas.fa-plus-circle {
-  font-size: 38px;
+#mobileNav {
+  width: 33px;
+  height: 33px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas.fa-bars {
+  z-index: 11;
+  font-size: 15px;
+  position: relative;
 }
 
 .footer {
@@ -209,6 +207,7 @@ a:focus {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
+    line-height: 1em;
   }
 
   .topNavLinks li a {
@@ -217,7 +216,7 @@ a:focus {
     font-weight: 500;
   }
 
-  .fas.fa-plus-circle {
+  #mobileNav {
     display: none;
   }
 }

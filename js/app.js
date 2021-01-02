@@ -66,10 +66,20 @@ $("#mobileNav").click(() => {
   if (menuOpen == false) {
     $(".overlay").css("visibility", "visible");
     $(".overlay").css("opacity", "1");
+    $(".overlayBackground").css("transform", "scale(8)");
+    $(".overlay").css("transition", "visibility 2s, opacity 1s ease-in-out");
+    $(".overlayBackground").css("transition", "all 750ms ease-in-out");
+
     menuOpen = true;
   } else {
     $(".overlay").css("visibility", "hidden");
     $(".overlay").css("opacity", "0");
+    $(".overlayBackground").css("transform", "scale(0.1)");
+    $(".overlay").css(
+      "transition",
+      "visibility 1.5s, opacity 0.75s ease-in-out"
+    );
+    $(".overlayBackground").css("transition", "all 750ms ease-in-out");
     menuOpen = false;
   }
 });
