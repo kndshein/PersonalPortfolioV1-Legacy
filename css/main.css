@@ -79,14 +79,14 @@ a:focus {
 
 /* Header */
 .overlay {
-  height: 100%;
+  height: 0;
   width: 100%;
   position: fixed;
   z-index: 10;
   left: 0;
   top: 63px;
   overflow-x: hidden;
-  display: none;
+  display: block;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
