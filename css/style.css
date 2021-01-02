@@ -51,7 +51,6 @@
 }
 
 .codeGallery .card {
-  /* Add shadows to create the "card" effect */
   border: rgba(63, 63, 63, 0.2) 1px solid;
   transition: all 0.2s ease-in-out;
   height: 300px;
@@ -183,9 +182,9 @@
   min-width: 200px;
   height: min(15vw, 250px);
   min-height: 200px;
-  margin: 0 auto 3vw auto;
   display: block;
-  margin-top: max(5vw, 75px);
+  margin: 0 auto 3vw auto;
+  margin-top: max(5vw, 90px);
   object-fit: cover;
   border: 1px solid var(--main);
 }

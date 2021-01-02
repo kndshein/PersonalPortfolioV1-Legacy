@@ -44,6 +44,18 @@ body {
   line-height: 2.75rem;
   margin: auto;
   padding: 20px;
+  animation: fadeInAnimation ease-in-out 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -136,7 +148,7 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 20px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -262,8 +274,12 @@ a:focus {
 
   .topNavLinks li a {
     margin-left: 25px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
   }
 
   #mobileNav {
