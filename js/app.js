@@ -1,5 +1,3 @@
-console.log("hello world");
-
 ///////////////////////////////////
 // PULL AND RENDER DATA FROM GOOGLE SHEET (CODE)
 ///////////////////////////////////
@@ -109,7 +107,8 @@ $("#mobileNav").click(() => {
     $(".overlay").css("visibility", "visible");
     $(".overlay").css("opacity", "1");
     $(".overlayBackground").css("transform", "scale(8)");
-    $(".overlay").css("transition", "visibility 2s, opacity 1s ease-in-out");
+    $(".overlay").css("transition", "opacity 1s ease-in-out");
+    $(".overlay").css("display", "block");
     $(".overlayBackground").css("transition", "all 750ms ease-in-out");
     $(".menuButton").addClass("open");
     menuOpen = true;
@@ -117,10 +116,8 @@ $("#mobileNav").click(() => {
     $(".overlay").css("visibility", "hidden");
     $(".overlay").css("opacity", "0");
     $(".overlayBackground").css("transform", "scale(0.1)");
-    $(".overlay").css(
-      "transition",
-      "visibility 1.5s, opacity 0.75s ease-in-out"
-    );
+    $(".overlay").css("display", "none");
+    $(".overlay").css("transition", "opacity 0.75s ease-in-out");
     $(".overlayBackground").css("transition", "all 750ms ease-in-out");
     $(".menuButton").removeClass("open");
     menuOpen = false;
