@@ -61,12 +61,20 @@ $.ajax(
 ////////////////////////////
 // Overlay Mobile Navigation
 ////////////////////////////
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+let menuOpen = false;
+$("#mobileNav").click(() => {
+  if (menuOpen == false) {
+    $(".overlay").css("visibility", "visible");
+    $(".overlay").css("opacity", "1");
+    menuOpen = true;
+  } else {
+    $(".overlay").css("visibility", "hidden");
+    $(".overlay").css("opacity", "0");
+    menuOpen = false;
+  }
+});
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+// function closeNav() {
+//   document.getElementById("myNav").style.display = "none";
+// }

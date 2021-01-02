@@ -15,6 +15,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script src="js/velocity.min.js"></script>
 
     <!-- *****************************BOOTSTRAP 5********************************** -->
     <!-- ************BOOTSTRAP 5 DOCS -> https://v5.getbootstrap.com/************** -->
@@ -53,14 +54,8 @@
   <body>
     <header>
       <!-- Overlay Mobile Navigation -->
-      <div id="myNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          <i class="fas fa-times-circle"></i>
-        </a>
-
-        <!-- Overlay content -->
-        <div class="overlay-content">
+      <div class="overlay">
+        <div class="overlayContent">
           <a href="code.html">I code</a>
           <a href="design.html">I design</a>
           <a href="draw.html">I draw</a>
@@ -74,7 +69,7 @@
         <nav class="topNav">
           <div id="logo"><a href="index.html">Kaung Nan Dar Shein</a></div>
           <div id="logoAlt"><a href="index.html">KNDS</a></div>
-          <div id="mobileNav" onclick="openNav()">
+          <div id="mobileNav">
             <i class="fas fa-plus-circle"></i>
           </div>
           <ul class="topNavLinks">
