@@ -66,8 +66,6 @@ a:focus {
 /* Raw CSS for mobile start*/
 
 /* Header */
-
-/* Overlay Mobile Navigation Start*/
 .overlay {
   height: 100%;
   width: 100%;
@@ -107,16 +105,14 @@ a:focus {
 
 .overlayBackground {
   z-index: 6;
-  width: 350px;
-  height: 350px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   background-color: var(--liteAccent);
   transition: all 750ms ease-in-out;
   transform: scale(0.1);
   position: absolute;
 }
-
-/* Overlay Mobile Navigation End */
 
 #logo,
 #logoAlt {
@@ -158,11 +154,66 @@ a:focus {
   align-items: center;
 }
 
-.fas.fa-bars {
+.menuButton {
   z-index: 11;
-  font-size: 15px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 750ms ease-in-out;
 }
+
+.menuButtonBurger {
+  width: 20px;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+  transition: all 750ms ease-in-out;
+}
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+  transition: all 750ms ease-in-out;
+}
+
+.menuButtonBurger::before {
+  transform: translateY(-7px);
+}
+
+.menuButtonBurger::after {
+  transform: translateY(7px);
+}
+
+.menuButton.open .menuButtonBurger {
+  transform: translateX(10px);
+  background: transparent;
+}
+
+.menuButton.open .menuButtonBurger::before {
+  transform: rotate(45deg) translate(-9px, 9px);
+  width: 20px;
+  background: red;
+}
+
+.menuButton.open .menuButtonBurger::after {
+  transform: rotate(-45deg) translate(-9px, -9px);
+  width: 20px;
+}
+
+/* .fas.fa-bars {
+  z-index: 11;
+  font-size: 20px;
+  position: relative;
+} */
 
 .footer {
   margin-top: 75px;
@@ -178,7 +229,7 @@ a:focus {
 
 /* Raw CSS for mobile end*/
 
-/* Raw CSS for desktop */
+/* Raw CSS for desktop start*/
 
 @media only screen and (min-width: 1024px) {
   body {
@@ -220,3 +271,5 @@ a:focus {
     display: none;
   }
 }
+
+/* Raw CSS for desktop end*/

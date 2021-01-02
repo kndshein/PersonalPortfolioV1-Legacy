@@ -125,9 +125,12 @@
   border-radius: 50%;
   width: min(15vw, 250px);
   min-width: 200px;
+  height: min(15vw, 250px);
+  min-height: 200px;
   margin: 0 auto 3vw auto;
   display: block;
   margin-top: max(5vw, 75px);
+  object-fit: cover;
 }
 
 .aboutText {

@@ -69,7 +69,7 @@ $("#mobileNav").click(() => {
     $(".overlayBackground").css("transform", "scale(8)");
     $(".overlay").css("transition", "visibility 2s, opacity 1s ease-in-out");
     $(".overlayBackground").css("transition", "all 750ms ease-in-out");
-
+    $(".menuButton").addClass("open");
     menuOpen = true;
   } else {
     $(".overlay").css("visibility", "hidden");
@@ -80,6 +80,7 @@ $("#mobileNav").click(() => {
       "visibility 1.5s, opacity 0.75s ease-in-out"
     );
     $(".overlayBackground").css("transition", "all 750ms ease-in-out");
+    $(".menuButton").removeClass("open");
     menuOpen = false;
   }
 });

@@ -125,3 +125,5 @@ I was missing the scriptURL in javascript.
 [Overlay Mobile Navigation](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
 
 [Form to Google Sheets with jQuery](https://dev.to/omerlahav/submit-a-form-to-a-google-spreadsheet-1bia)
+
+[Hamburger Animation](https://www.youtube.com/watch?v=dIyVTjJAkLw)
