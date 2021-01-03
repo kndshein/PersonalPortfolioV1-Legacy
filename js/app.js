@@ -48,7 +48,7 @@ $.ajax(
     </div>
     </div>
     `);
-    $(".codeGallery").append($a);
+    $(".codeCollection").append($a);
   }
 });
 
@@ -82,7 +82,7 @@ $.ajax(
     const $a = $("<a>");
     $a.addClass("cardLink");
     $a.attr("target", "_blank");
-    $a.attr("href", `${projects[i].link}`);
+    $a.attr("href", `./shootCollection/${projects[i].link}.html`);
     $a.html(`
     <div class="card">
       <img
@@ -94,12 +94,12 @@ $.ajax(
       </div>
     </div>
     `);
-    $(".shootGallery").append($a);
+    $(".shootCollection").append($a);
   }
 });
 
 ////////////////////////////
-// Overlay Mobile Navigation
+// OVERLAY MOBILE NAVIGATION
 ////////////////////////////
 let menuOpen = false;
 $("#mobileNav").click(() => {
@@ -123,8 +123,3 @@ $("#mobileNav").click(() => {
     menuOpen = false;
   }
 });
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-// function closeNav() {
-//   document.getElementById("myNav").style.display = "none";
-// }
