@@ -81,7 +81,6 @@ $.ajax(
   for (i = 0; i < projects.length; i++) {
     const $a = $("<a>");
     $a.addClass("cardLink");
-    $a.attr("target", "_blank");
     $a.attr("href", `./shootCollection/${projects[i].link}.html`);
     $a.html(`
     <div class="card">
