@@ -46,7 +46,7 @@
 .codeCollection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin-top: 75px;
+  margin-top: max(5vw, 90px);
   gap: min(10vw, 50px);
 }
 
@@ -125,7 +125,7 @@
 .shootCollection {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  margin-top: 75px;
+  margin-top: max(5vw, 90px);
   gap: min(10vw, 50px);
 }
 

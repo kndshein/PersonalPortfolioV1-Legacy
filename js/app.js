@@ -22,6 +22,7 @@ $.ajax(
       link: project.gsx$link.$t,
     };
   });
+
   console.log(projects);
 
   // Use jQuery to render projects to page

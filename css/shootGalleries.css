@@ -1,0 +1,19 @@
+/***********
+*   MYANMAR   *
+***********/
+
+.myanmarGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+  margin-top: max(5vw, 90px);
+}
+
+.myanmarGallery img {
+  height: 100%;
+  width: 80%;
+}
