@@ -212,6 +212,13 @@
   font-size: 2rem;
 }
 
+.aboutText .resume {
+  font-size: 18px;
+  background-color: wheat;
+  padding: 5px;
+  text-align: center;
+}
+
 .aboutForm {
   max-width: 500px;
   margin: 0 auto;
