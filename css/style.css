@@ -213,9 +213,12 @@
 }
 
 .aboutText .resume {
+  display: block;
   font-size: 18px;
   background-color: wheat;
-  padding: 5px;
+  padding: 3px;
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
 }
 
