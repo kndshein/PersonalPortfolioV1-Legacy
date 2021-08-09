@@ -5,13 +5,13 @@ $.ajax(
   "https://spreadsheets.google.com/feeds/list/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/1/public/full?alt=json"
 ).then((data) => {
   // Checking my data
-  console.log(data);
+  // console.log(data);
 
   // Put our projects in a variable
   const rawProjects = data.feed.entry;
 
   // Log our projects
-  console.log(rawProjects);
+  // console.log(rawProjects);
 
   // Prettify our projects array
   const projects = rawProjects.map((project) => {
@@ -23,7 +23,7 @@ $.ajax(
     };
   });
 
-  console.log(projects);
+  // console.log(projects);
 
   // Use jQuery to render projects to page
   for (i = 0; i < projects.length; i++) {
@@ -60,13 +60,13 @@ $.ajax(
   "https://spreadsheets.google.com/feeds/list/1ZYlV-gAMjH1KxIEfc24jhPFtLRe3hfE-3TcwIzMoh1o/2/public/full?alt=json"
 ).then((data) => {
   // Checking my data
-  console.log(data);
+  // console.log(data);
 
   // Put our projects in a variable
   const rawProjects = data.feed.entry;
 
   // Log our projects
-  console.log(rawProjects);
+  // console.log(rawProjects);
 
   // Prettify our projects array
   const projects = rawProjects.map((project) => {
@@ -76,7 +76,7 @@ $.ajax(
       link: project.gsx$link.$t,
     };
   });
-  console.log(projects);
+  // console.log(projects);
 
   // Use jQuery to render projects to page
   for (i = 0; i < projects.length; i++) {
